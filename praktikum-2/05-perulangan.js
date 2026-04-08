@@ -1,4 +1,3 @@
-// Struktur: for (inisialisasi; kondisi; update)
 console.log('=== For Loop: Hitung 1 sampai 5 ===');
 for (let i = 1; i <= 5; i++) {
     console.log(`Iterasi ke-${i}`);
