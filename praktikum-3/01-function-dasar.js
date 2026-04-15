@@ -76,4 +76,4 @@ console.log("Hasil 10 + 5  :", kalkulator(10, '+', 5));
 console.log("Hasil 10 - 5  :", kalkulator(10, '-', 5));
 console.log("Hasil 10 * 5  :", kalkulator(10, '*', 5));
 console.log("Hasil 10 / 2  :", kalkulator(10, '/', 2));
-console.log("Hasil 10 / 0  :", kalkulator(10, '/', 0)); 
+console.log("Hasil 10 / 0  :", kalkulator(10, '/', 0)); D
