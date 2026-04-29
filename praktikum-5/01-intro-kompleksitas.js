@@ -1,27 +1,21 @@
-//Untuk mengukur perbedaan performa algoritma secara empiris
-
-//Fungsi untuk ukur waktu eksekusi
 function ukurWaktu(label, fn) {
   const mulai = Date.now();
   fn();
   const selesai = Date.now();
   console.log(`${label}: ${selesai - mulai} ms`);
 }
-const N = 100_000; // ukuran data nya ada 100k
+const N = 100_000; 
 
-// Algoritmanya A: O(n) — loop untuk satu kali
 function jumlahkanLinear(n) {
   let total = 0;
   for (let i = 1; i <= n; i++) total += i;
   return total;
 }
 
-// Algoritmanya B: O(1) — ini rumus matematika
 function jumlahkanRumus(n) {
   return (n * (n + 1)) / 2;
 }
 
-// Algoritmanya C: O(n2) ini loop bersarang
 function cariPasangan(arr) {
   const pasangan = [];
   for (let i = 0; i < arr.length; i++) {

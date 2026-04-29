@@ -1,12 +1,12 @@
 function ambilPertama(arr) {
   return arr[0];
-} // 0(1)
+}
 function tambahkanItem(arr, item) {
   arr.push(item);
-} //0(1)
+}
 function isGenap(n) {
   return n % 2 === 0;
-} //0(1)
+}
 
 function binarySearch(arr, target) {
   let kiri = 0,
@@ -47,11 +47,11 @@ function fibRekursif(n) {
 
 console.log("=== O(1) — selalu cepat ===");
 console.log(ambilPertama([10, 20, 30, 40, 50])); // 10
-console.log(isGenap(42)); // true
+console.log(isGenap(42));
 
 console.log("\n=== O(log n) — Binary Search ===");
 const sorted = Array.from({ length: 1_000_000 }, (_, i) => i);
-binarySearch(sorted, 731_452); // cari di 1 juta data
+binarySearch(sorted, 731_452);
 
 console.log("\n=== O(n) — Linear Search ===");
 console.log(
@@ -66,7 +66,6 @@ console.log("\n=== O(2n) — Fibonacci Rekursif (n kecil!) ===");
 for (let i = 0; i <= 10; i++) process.stdout.write(fibRekursif(i) + " ");
 console.log("");
 
-// Demonstrasi betapa lambatnya O(2n)
 console.log("\nWaktu fib(35) O(2n):");
 let t = Date.now();
 fibRekursif(35);
